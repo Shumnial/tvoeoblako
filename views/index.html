@@ -1,14 +1,14 @@
 {% extends layout %} {% block content %}
-<section class="section section--bg-lightblue intro">
+<section class="section section--bg-lightblue intro" data-section="1">
   <div class="container">
     <div class="section__inner">
       <div class="section__content">
-        <h1 class="title title--size-extra" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50">Фирменная почта с&nbsp;вашим доменом</h1>
-        <p class="text text--fz-30 text--blue" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100">Красивый адрес электронной
+        <h1 class="title title--size-extra" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50">Фирменная почта<br>с&nbsp;вашим доменом</h1>
+        <p class="intro__large-text text text--fz-30 text--blue" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100">Красивый адрес электронной
           <br>почты&nbsp;&mdash; лицо компании!</p>
-        <p class="text" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100">от&nbsp;119&nbsp;₽ в&nbsp;месяц за&nbsp;1&nbsp;пользователя</p>
+        <p class="intro__text text" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100">от&nbsp;119&nbsp;₽ в&nbsp;месяц за&nbsp;1&nbsp;пользователя</p>
         <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="150" class="mb20">
-          {{ Macros.Btn('mailto:uc@stc-v.ru') }}
+          {{ Macros.Btn('mailto:info@tvoeoblako.ru', 'btn--mt btn--slider') }}
         </div>
       </div>
     </div>
@@ -18,20 +18,10 @@
   </div>
 </section>
 <section class="for-what section section--twocolumn" id="for-what">
+  <h2 class="title" data-aos="fade-up">Зачем бизнесу нужна корпоративная почта?</h2>
   <div class="container">
-    <p class="title" data-aos="fade-up">Зачем бизнесу нужна корпоративная почта?</p>
     <div class="section__inner section__inner--no-padding section__inner--height-auto" data-aos="fade-right" data-aos-offset="100">
       <div class="for-what__content section__content">
-        <div class="for-what__item" data-reason-bg="1" data-aos="fade-up">
-          <p class="text text--blue for-what__title">Расширить объем ящиков
-            <br>до&nbsp;50&nbsp;Гб на&nbsp;пользователя</p>
-          <p class="text for-what__text">С&nbsp;почтовым сервисом от&nbsp;Microsoft всегда будет место для новых писем</p>
-        </div>
-        <div class="for-what__item" data-reason-bg="2" data-aos="fade-up">
-          <p class="text text--blue for-what__title">Настроить действительно
-            <br>эффективный спам-фильтр</p>
-          <p class="text for-what__text">Он&nbsp;не&nbsp;пропустит нежелательные письма, вирусы и&nbsp;шифровальщики</p>
-        </div>
         <div class="for-what__item" data-reason-bg="3" data-aos="fade-up">
           <p class="text text--blue for-what__title">Защитить компанию
             <br>от&nbsp;взлома ящиков и&nbsp;утечки данных</p>
@@ -41,428 +31,436 @@
           <p class="text text--blue for-what__title">Избавиться от&nbsp;рекламы в&nbsp;почтовом сервисе</p>
           <p class="text for-what__text">Сотрудники работают продуктивнее, когда их&nbsp;не&nbsp;отвлекает лишняя информация</p>
         </div>
+        <div class="for-what__item" data-reason-bg="2" data-aos="fade-up">
+          <p class="text text--blue for-what__title">Настроить действительно
+            <br>эффективный спам-фильтр</p>
+          <p class="text for-what__text">Он&nbsp;не&nbsp;пропустит нежелательные письма, вирусы и&nbsp;шифровальщики</p>
+        </div>
         <div class="for-what__item" data-reason-bg="5" data-aos="fade-up">
           <p class="text text--blue for-what__title">Получить надежный сервис техподдержки</p>
           <p class="text for-what__text">Мы&nbsp;ответим на&nbsp;все ваши вопросы и&nbsp;поможем решить технические проблемы</p>
+        </div>
+        <div class="for-what__item" data-reason-bg="1" data-aos="fade-up">
+          <p class="text text--blue for-what__title">Расширить объем ящиков
+            <br>до&nbsp;50&nbsp;Гб на&nbsp;пользователя</p>
+          <p class="text for-what__text">С&nbsp;почтовым сервисом от&nbsp;Microsoft всегда будет место для новых писем</p>
         </div>
       </div>
     </div>
 </section>
 <section class="section section--onecolumn section--no-min-height section--bg-lightblue">
   <div class="container">
-    <div class="section__inner section__inner--height-auto section__inner--no-padding">
+    <div class="section__inner section__inner--height-auto section__inner--no-padding" data-aos="fade-up">
       <div class="section__content">
         <p class="text text--fz-30 text--blue">Напишите нам, чтобы получить
           <br>корпоративную почту бизнес-класса</p>
         <div>
-          {{ Macros.Btn('mailto:uc@stc-v.ru', 'btn--mt') }}
+          {{ Macros.Btn('mailto:info@tvoeoblako.ru', 'btn--mt btn--cta') }}
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="container tarif__wrap">
-  <h2 class="title">Выберите только нужные функции</h2>
-  <div class="tarif hidden-xs">
-    <div class="tarif__tr">
-      <div class="tarif__th">
-        <div class="tarif__title">Возможности</div>
-      </div>
-      <div class="tarif__th">
-        <div class="tarif__title">Лайт</div>
-      </div>
-      <div class="tarif__th">
-        <div class="tarif__title">Бизнес</div>
-      </div>
-      <div class="tarif__th tarif_star">
-        <div class="tarif__title">Бизнес+</div>
-      </div>
-    </div>
-    <div class="tarif__tr">
-      <div class="tarif__td">
-        <div class="tarif__title">Ежемесячный платеж</div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__title">119 руб./месяц
-          <br><span class="tarif__text">за 1 пользователя</span>
+<section class="section section--bg-blue">
+  <div class="container">
+  <section class="tarif__wrap">
+    <h2 class="title tarif__heading" data-aos="fade-up">Выберите только нужные функции</h2>
+    <div class="tarif hidden-xs" data-aos="fade-up">
+      <div class="tarif__tr">
+        <div class="tarif__th">
+          <div class="tarif__title">Возможности</div>
+        </div>
+        <div class="tarif__th">
+          <div class="tarif__title">Лайт</div>
+        </div>
+        <div class="tarif__th">
+          <div class="tarif__title">Бизнес</div>
+        </div>
+        <div class="tarif__th tarif_star">
+          <div class="tarif__title">Бизнес+</div>
         </div>
       </div>
-      <div class="tarif__td">
-        <div class="tarif__title">239 руб./месяц
-          <br><span class="tarif__text">за 1 пользователя</span>
+      <div class="tarif__tr">
+        <div class="tarif__td">
+          <div class="tarif__title">Ежемесячный платеж</div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__title">119 руб./месяц
+            <br><span class="tarif__text">за 1 пользователя</span>
+          </div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__title">239 руб./месяц
+            <br><span class="tarif__text">за 1 пользователя</span>
+          </div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__title">349 руб./месяц
+            <br><span class="tarif__text">за 1 пользователя</span>
+          </div>
         </div>
       </div>
-      <div class="tarif__td">
-        <div class="tarif__title">349 руб./месяц
-          <br><span class="tarif__text">за 1 пользователя</span>
-        </div>
-      </div>
-    </div>
-    <div class="tarif__tr">
-      <div class="tarif__td">
-        <label class="drop">
-          <input type="checkbox" class="drop__check">
-          <div class="tarif__title">
-            <span class="pseudo-link">Большие почтовые ящики</span>
-          </div>
-          <div class="tarif__text drop__toggle">
-            Каждый пользователь получает хранилище для почты емкостью до 50 Гб и может отправлять сообщения размером до 150 Мб.
-          </div>
-        </label>
-      </div>
-      <div class="tarif__td tarif__td--blue">
-        2 Гб
-      </div>
-      <div class="tarif__td tarif__td--blue">
-        50 Гб
-      </div>
-      <div class="tarif__td tarif__td--blue">
-        50 Гб
-      </div>
-    </div>
-    <div class="tarif__tr">
-      <div class="tarif__td">
-        <label class="drop">
-          <input type="checkbox" class="drop__check">
-          <div class="tarif__title">
-            <span class="pseudo-link">Поддержка Outlook</span>
-          </div>
-          <div class="tarif__text drop__toggle">
-            Пользователи могут подключать к Exchange Online поддерживаемые версии Outlook и работать в хорошо знакомом им полнофункциональном клиентском приложении.
-          </div>
-        </label>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__no"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-    </div>
-    <div class="tarif__tr">
-      <div class="tarif__td">
-        <label class="drop">
-          <input type="checkbox" class="drop__check">
-          <div class="tarif__title">
-            <span class="pseudo-link">Доступ через Интернет</span>
-          </div>
-          <div class="tarif__text drop__toggle">
-            Удобный и полнофункциональный веб-клиент Outlook Web App позволяет пользоваться всеми возможностями обычного клиента Outlook через веб-браузер.
-          </div>
-        </label>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-    </div>
-    <div class="tarif__tr">
-      <div class="tarif__td">
-        <label class="drop">
-          <input type="checkbox" class="drop__check">
-          <div class="tarif__title">
-            <span class="pseudo-link">Общий календарь и контакты</span>
-          </div>
-          <div class="tarif__text drop__toggle">
-            Вы можете сравнивать календари при планировании собраний, а также получаете доступ к функциям совместной работы, включая общие календари, группы, глобальный список адресов, внешние контакты, задачи, конференц-залы и возможности делегирования.
-          </div>
-        </label>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-    </div>
-    <div class="tarif__tr">
-      <div class="tarif__td">
-        <label class="drop">
-          <input type="checkbox" class="drop__check">
-          <div class="tarif__title">
-            <span class="pseudo-link">Безопасность</span>
-          </div>
-          <div class="tarif__text drop__toggle">
-            Каждый почтовый ящик надежно защищен от вредоносных программ и нежелательной почты с помощью системы Exchange Online Protection.
-          </div>
-        </label>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-    </div>
-    <div class="tarif__tr">
-      <div class="tarif__td">
-        <label class="drop">
-          <input type="checkbox" class="drop__check">
-          <div class="tarif__title">
-            <span class="pseudo-link">Exchange Online Advanced<br> Threat Protection</span>
-          </div>
-          <div class="tarif__text drop__toggle">
-            Дополнительная защита от неизвестных угроз — опасных вложений и ссылок.
-          </div>
-        </label>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__no"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__no"></div>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__ok"></div>
-      </div>
-    </div>
-    <div class="tarif__tr tarif__footer">
-      <div class="tarif__td tarif_hidden"></div>
-      <div class="tarif__td">
-        <div class="tarif__title">125
-          <br>руб./месяц</div>
-        <button class="btn btn_blue popup__link  " data-gid="20" data-id="3" data-form-gid="27">
-          Заказать
-        </button>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__title">245
-          <br>руб./месяц</div>
-        <button class="btn btn_blue popup__link  " data-gid="21" data-id="4" data-form-gid="28">
-          Заказать
-        </button>
-      </div>
-      <div class="tarif__td">
-        <div class="tarif__title">365
-          <br>руб./месяц</div>
-        <button class="btn btn_blue popup__link  " data-gid="22" data-id="5" data-form-gid="29">
-          Заказать
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="tarif-mob  visible-xs">
-    <label class="drop tarif-mob__drop">
-      <input type="checkbox" class="drop__check">
-      <div class="tarif-mob__item drop__toggle-wrap">
-        <div class="tarif-mob__title">Стандарт</div>
-        <div class="tarif-mob__price">125 руб./месяц</div>
-        <div class="tarif-mob__content drop__toggle">
-          <label class="tarif-mob__item-in drop">
+      <div class="tarif__tr">
+        <div class="tarif__td">
+          <label class="drop">
             <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
+            <div class="tarif__title">
               <span class="pseudo-link">Большие почтовые ящики</span>
             </div>
-            <div class="tarif-mob__text drop__toggle">
+            <div class="tarif__text drop__toggle">
               Каждый пользователь получает хранилище для почты емкостью до 50 Гб и может отправлять сообщения размером до 150 Мб.
             </div>
           </label>
-          <label class="tarif-mob__item-in drop tarif-mob__item-in_no drop">
+        </div>
+        <div class="tarif__td tarif__td--blue">
+          2 Гб
+        </div>
+        <div class="tarif__td tarif__td--blue">
+          50 Гб
+        </div>
+        <div class="tarif__td tarif__td--blue">
+          50 Гб
+        </div>
+      </div>
+      <div class="tarif__tr">
+        <div class="tarif__td">
+          <label class="drop">
             <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Поддержка Outlook</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Пользователи могут подключать к Exchange Online поддерживаемые версии Outlook и работать в хорошо знакомом им полнофункциональном клиентском приложении.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
+            <div class="tarif__title">
               <span class="pseudo-link">Доступ через Интернет</span>
             </div>
-            <div class="tarif-mob__text drop__toggle">
+            <div class="tarif__text drop__toggle">
               Удобный и полнофункциональный веб-клиент Outlook Web App позволяет пользоваться всеми возможностями обычного клиента Outlook через веб-браузер.
             </div>
           </label>
-          <label class="tarif-mob__item-in drop">
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+      </div>
+      <div class="tarif__tr">
+        <div class="tarif__td">
+          <label class="drop">
             <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
+            <div class="tarif__title">
               <span class="pseudo-link">Общий календарь и контакты</span>
             </div>
-            <div class="tarif-mob__text drop__toggle">
+            <div class="tarif__text drop__toggle">
               Вы можете сравнивать календари при планировании собраний, а также получаете доступ к функциям совместной работы, включая общие календари, группы, глобальный список адресов, внешние контакты, задачи, конференц-залы и возможности делегирования.
             </div>
           </label>
-          <label class="tarif-mob__item-in drop">
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+      </div>
+      <div class="tarif__tr">
+        <div class="tarif__td">
+          <label class="drop">
             <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
+            <div class="tarif__title">
               <span class="pseudo-link">Безопасность</span>
             </div>
-            <div class="tarif-mob__text drop__toggle">
+            <div class="tarif__text drop__toggle">
               Каждый почтовый ящик надежно защищен от вредоносных программ и нежелательной почты с помощью системы Exchange Online Protection.
             </div>
           </label>
-          <label class="tarif-mob__item-in tarif-mob__item-in_no drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Exchange Online Advanced Threat Protection</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Дополнительная защита от неизвестных угроз — опасных вложений и ссылок.
-            </div>
-          </label>
-          <button class="btn btn_blue popup__link  " data-gid="20" data-id="3" data-form-gid="27">
-            Заказать
-          </button>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
         </div>
       </div>
-    </label>
-    <label class="drop tarif-mob__drop">
-      <input type="checkbox" class="drop__check">
-      <div class="tarif-mob__item drop__toggle-wrap">
-        <div class="tarif-mob__title">Премиум</div>
-        <div class="tarif-mob__price">245 руб./месяц</div>
-        <div class="tarif-mob__content drop__toggle">
-          <label class="tarif-mob__item-in drop">
+      <div class="tarif__tr">
+        <div class="tarif__td">
+          <label class="drop">
             <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Большие почтовые ящики</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Каждый пользователь получает хранилище для почты емкостью до 50 Гб и может отправлять сообщения размером до 150 Мб.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
+            <div class="tarif__title">
               <span class="pseudo-link">Поддержка Outlook</span>
             </div>
-            <div class="tarif-mob__text drop__toggle">
+            <div class="tarif__text drop__toggle">
               Пользователи могут подключать к Exchange Online поддерживаемые версии Outlook и работать в хорошо знакомом им полнофункциональном клиентском приложении.
             </div>
           </label>
-          <label class="tarif-mob__item-in drop">
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__no"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
+        </div>
+      </div>
+      <div class="tarif__tr">
+        <div class="tarif__td">
+          <label class="drop">
             <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Доступ через Интернет</span>
+            <div class="tarif__title">
+              <span class="pseudo-link">Exchange Online Advanced<br> Threat Protection</span>
             </div>
-            <div class="tarif-mob__text drop__toggle">
-              Удобный и полнофункциональный веб-клиент Outlook Web App позволяет пользоваться всеми возможностями обычного клиента Outlook через веб-браузер.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Общий календарь и контакты</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Вы можете сравнивать календари при планировании собраний, а также получаете доступ к функциям совместной работы, включая общие календари, группы, глобальный список адресов, внешние контакты, задачи, конференц-залы и возможности делегирования.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Безопасность</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Каждый почтовый ящик надежно защищен от вредоносных программ и нежелательной почты с помощью системы Exchange Online Protection.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in tarif-mob__item-in_no drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Exchange Online Advanced Threat Protection</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
+            <div class="tarif__text drop__toggle">
               Дополнительная защита от неизвестных угроз — опасных вложений и ссылок.
             </div>
           </label>
-          <button class="btn btn_blue popup__link  " data-gid="21" data-id="4" data-form-gid="28">
-            Заказать
-          </button>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__no"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__no"></div>
+        </div>
+        <div class="tarif__td">
+          <div class="tarif__ok"></div>
         </div>
       </div>
-    </label>
-    <label class="drop tarif-mob__drop">
-      <input type="checkbox" class="drop__check">
-      <div class="tarif-mob__item drop__toggle-wrap">
-        <div class="tarif-mob__title">Максимум</div>
-        <div class="tarif-mob__price">365 руб./месяц</div>
-        <div class="tarif-mob__content drop__toggle">
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" checked="" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Большие почтовые ящики</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Каждый пользователь получает хранилище для почты емкостью до 50 Гб и может отправлять сообщения размером до 150 Мб.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Поддержка Outlook</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Пользователи могут подключать к Exchange Online поддерживаемые версии Outlook и работать в хорошо знакомом им полнофункциональном клиентском приложении.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Доступ через Интернет</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Удобный и полнофункциональный веб-клиент Outlook Web App позволяет пользоваться всеми возможностями обычного клиента Outlook через веб-браузер.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Совместная работа над документами </span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Всего одним щелчком мыши вы можете сохранить вложение непосредственно в своей учетной записи OneDrive для бизнеса, а затем отправить ссылку на сохраненный файл прямо из приложения Outlook Web App.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Общий календарь и контакты</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Вы можете сравнивать календари при планировании собраний, а также получаете доступ к функциям совместной работы, включая общие календари, группы, глобальный список адресов, внешние контакты, задачи, конференц-залы и возможности делегирования.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Безопасность</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Каждый почтовый ящик надежно защищен от вредоносных программ и нежелательной почты с помощью системы Exchange Online Protection.
-            </div>
-          </label>
-          <label class="tarif-mob__item-in drop">
-            <input type="checkbox" class="drop__check">
-            <div class="tarif-mob__title-in">
-              <span class="pseudo-link">Exchange Online Advanced Threat Protection</span>
-            </div>
-            <div class="tarif-mob__text drop__toggle">
-              Дополнительная защита от неизвестных угроз — опасных вложений и ссылок.
-            </div>
-          </label>
-          <button class="btn btn_blue popup__link  " data-gid="22" data-id="5" data-form-gid="29">
-            Заказать
-          </button>
+      <div class="tarif__tr tarif__footer">
+        <div class="tarif__td tarif_hidden"></div>
+        <div class="tarif__td">
+          <a href="mailto:info@tvoeoblako.ru" class="btn btn_blue popup__link btn--tarif1" data-gid="20" data-id="3" data-form-gid="27">
+            Написать
+          </a>
+        </div>
+        <div class="tarif__td">
+          <a href="mailto:info@tvoeoblako.ru" class="btn btn_blue popup__link btn--tarif2" data-gid="21" data-id="4" data-form-gid="28">
+            Написать
+          </a>
+        </div>
+        <div class="tarif__td">
+          <a href="mailto:info@tvoeoblako.ru" class="btn btn_blue popup__link btn--tarif3" data-gid="22" data-id="5" data-form-gid="29">
+            Написать
+          </a>
         </div>
       </div>
-    </label>
+    </div>
+    <div class="tarif-mob  visible-xs">
+      <label class="drop tarif-mob__drop">
+        <input type="checkbox" class="drop__check">
+        <div class="tarif-mob__item drop__toggle-wrap">
+          <div class="tarif-mob__title">Лайт</div>
+          <div class="tarif-mob__price">119 руб./месяц</div>
+          <div class="tarif-mob__content drop__toggle">
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Большие почтовые ящики</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Каждый пользователь получает хранилище для почты емкостью до 50 Гб и может отправлять сообщения размером до 150 Мб.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop tarif-mob__item-in_no drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Поддержка Outlook</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Пользователи могут подключать к Exchange Online поддерживаемые версии Outlook и работать в хорошо знакомом им полнофункциональном клиентском приложении.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Доступ через Интернет</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Удобный и полнофункциональный веб-клиент Outlook Web App позволяет пользоваться всеми возможностями обычного клиента Outlook через веб-браузер.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Общий календарь и контакты</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Вы можете сравнивать календари при планировании собраний, а также получаете доступ к функциям совместной работы, включая общие календари, группы, глобальный список адресов, внешние контакты, задачи, конференц-залы и возможности делегирования.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Безопасность</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Каждый почтовый ящик надежно защищен от вредоносных программ и нежелательной почты с помощью системы Exchange Online Protection.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in tarif-mob__item-in_no drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Exchange Online Advanced Threat Protection</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Дополнительная защита от неизвестных угроз — опасных вложений и ссылок.
+              </div>
+            </label>
+            <a href="mailto:info@tvoeoblako.ru" class="btn btn_blue popup__link btn--tarif1" data-gid="20" data-id="3" data-form-gid="27">
+              Написать нам
+            </a>
+          </div>
+        </div>
+      </label>
+      <label class="drop tarif-mob__drop">
+        <input type="checkbox" class="drop__check">
+        <div class="tarif-mob__item drop__toggle-wrap">
+          <div class="tarif-mob__title">Бизнес</div>
+          <div class="tarif-mob__price">239 руб./месяц</div>
+          <div class="tarif-mob__content drop__toggle">
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Большие почтовые ящики</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Каждый пользователь получает хранилище для почты емкостью до 50 Гб и может отправлять сообщения размером до 150 Мб.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Поддержка Outlook</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Пользователи могут подключать к Exchange Online поддерживаемые версии Outlook и работать в хорошо знакомом им полнофункциональном клиентском приложении.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Доступ через Интернет</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Удобный и полнофункциональный веб-клиент Outlook Web App позволяет пользоваться всеми возможностями обычного клиента Outlook через веб-браузер.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Общий календарь и контакты</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Вы можете сравнивать календари при планировании собраний, а также получаете доступ к функциям совместной работы, включая общие календари, группы, глобальный список адресов, внешние контакты, задачи, конференц-залы и возможности делегирования.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Безопасность</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Каждый почтовый ящик надежно защищен от вредоносных программ и нежелательной почты с помощью системы Exchange Online Protection.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in tarif-mob__item-in_no drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Exchange Online Advanced Threat Protection</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Дополнительная защита от неизвестных угроз — опасных вложений и ссылок.
+              </div>
+            </label>
+            <a href="mailto:info@tvoeoblako.ru" class="btn btn_blue popup__link btn--tarif2" data-gid="21" data-id="4" data-form-gid="28">
+              Написать нам
+            </a>
+          </div>
+        </div>
+      </label>
+      <label class="drop tarif-mob__drop">
+        <input type="checkbox" class="drop__check">
+        <div class="tarif-mob__item drop__toggle-wrap">
+          <div class="tarif-mob__title">Бизнес+</div>
+          <div class="tarif-mob__price">349 руб./месяц</div>
+          <div class="tarif-mob__content drop__toggle">
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" checked="" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Большие почтовые ящики</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Каждый пользователь получает хранилище для почты емкостью до 50 Гб и может отправлять сообщения размером до 150 Мб.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Поддержка Outlook</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Пользователи могут подключать к Exchange Online поддерживаемые версии Outlook и работать в хорошо знакомом им полнофункциональном клиентском приложении.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Доступ через Интернет</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Удобный и полнофункциональный веб-клиент Outlook Web App позволяет пользоваться всеми возможностями обычного клиента Outlook через веб-браузер.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Совместная работа над документами </span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Всего одним щелчком мыши вы можете сохранить вложение непосредственно в своей учетной записи OneDrive для бизнеса, а затем отправить ссылку на сохраненный файл прямо из приложения Outlook Web App.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Общий календарь и контакты</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Вы можете сравнивать календари при планировании собраний, а также получаете доступ к функциям совместной работы, включая общие календари, группы, глобальный список адресов, внешние контакты, задачи, конференц-залы и возможности делегирования.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Безопасность</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Каждый почтовый ящик надежно защищен от вредоносных программ и нежелательной почты с помощью системы Exchange Online Protection.
+              </div>
+            </label>
+            <label class="tarif-mob__item-in drop">
+              <input type="checkbox" class="drop__check">
+              <div class="tarif-mob__title-in">
+                <span class="pseudo-link">Exchange Online Advanced Threat Protection</span>
+              </div>
+              <div class="tarif-mob__text drop__toggle">
+                Дополнительная защита от неизвестных угроз — опасных вложений и ссылок.
+              </div>
+            </label>
+            <a href="mailto:info@tvoeoblako.ru" class="btn btn_blue popup__link btn--tarif3" data-gid="22" data-id="5" data-form-gid="29">
+              Написать нам
+            </a>
+          </div>
+        </div>
+      </label>
+    </div>
+  </section>
   </div>
 </section>
 <section class="section" data-section="6">
@@ -471,8 +469,7 @@
       <div class="section__content">
         <h1 class="title title--size-extra" data-aos="fade-up">Ваш бизнес<br>будет защищен от&nbsp;шифровальщиков</h1>
         <div class="section__text-wrapper">
-          <p class="text" data-aos="fade-up">Вирусы-шифровальщики способны заблокировать
-            <br>доступ к&nbsp;файлам на&nbsp;компьютере.&nbsp;9&nbsp;из&nbsp;10&nbsp;заражений случается именно в&nbsp;почтовом сервисе.</p>
+          <p class="text" data-aos="fade-up">Вирусы-шифровальщики способны заблокировать доступ к&nbsp;файлам на&nbsp;компьютере за&nbsp;2&nbsp;минуты!&nbsp;<br>9&nbsp;из&nbsp;10&nbsp;заражений случается именно через зараженные почтовые вложения и&nbsp;подозрительные ссылки!</p>
           <p class="text" data-aos="fade-up">Служба защиты в&nbsp;почте от&nbsp;Microsoft фильтрует нежелательную почту и&nbsp;вредоносные программы на&nbsp;основе репутационных списков и&nbsp;кластерной аналитики. Результат&nbsp;&mdash; в&nbsp;вашем ящике только проверенные, безопасные письма.</p>
         </div>
       </div>
@@ -484,12 +481,12 @@
 </section>
 <section class="section section--down-part">
   <div class="container">
-    <div class="section__inner section__inner--height-auto section__inner--no-padding">
+    <div class="section__inner section__inner--height-auto section__inner--no-padding" data-aos="fade-up">
       <div class="section__content">
         <p class="text text--fz-30 text--blue">Не&nbsp;ждите, когда вирус проникнет в&nbsp;вашу корпоративную сеть.
           <br>Переходите на&nbsp;надежный почтовый сервис!</p>
         <div>
-          {{ Macros.Btn('mailto:uc@stc-v.ru', 'btn--mt') }}
+          {{ Macros.Btn('mailto:info@tvoeoblako.ru', 'btn--mt btn--protect') }}
         </div>
       </div>
     </div>
@@ -497,7 +494,7 @@
 </section>
 <section class="section section--onecolumn section--no-min-height section--bg-lightblue">
   <div class="container">
-    <div class="section__inner section__inner--height-auto section__inner--no-padding">
+    <div class="section__inner section__inner--height-auto section__inner--no-padding" data-aos="fade-up">
       <div class="section__content">
         <h2 class="title">Не&nbsp;уверены? Попробуйте бесплатно!</h2>
         <p class="text">Мы&nbsp;проведем демонстрацию и&nbsp;установим бесплатную версию
@@ -505,7 +502,7 @@
         <p class="text text--blue text--fz-24">Переход на&nbsp;новую почту с&nbsp;корпоративным
           <br>доменом&nbsp;&mdash; это просто и&nbsp;недорого!</p>
         <div>
-          <a href="mailto:uc@stc-v.ru" class="btn btn--size-large btn--mt" target="_blank">Написать нам</a>
+          <a href="mailto:info@tvoeoblako.ru" class="btn btn--size-large btn--mt btn--footer" target="_blank">Написать нам</a>
         </div>
       </div>
     </div>

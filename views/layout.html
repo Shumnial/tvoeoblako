@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="ru">
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KP8KBNZ');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <title>{{ locals.title }}</title>
     <meta content="{{ locals.description }}" name="description">
@@ -16,6 +23,7 @@
       <meta property="og:description" content="{{ locals.description }}">
     {%- endif %}
     <meta name="HandheldFriendly" content="true">
+
     <link href="{{ 'style.css'|css_asset }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <meta name="theme-color" content="#000">
@@ -24,6 +32,10 @@
 
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KP8KBNZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     {% import 'macros/macro.html' as Macros %}
     {% include "blocks/svg-symbols.svg" %}
     <div class="wrapper">

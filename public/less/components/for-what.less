@@ -1,6 +1,10 @@
 .for-what{
 	padding-bottom: 150px;
 
+	h2 {
+		text-align: center;
+		margin-bottom: 60px;
+	}
 
 	&__content {
 		display: flex;
@@ -10,9 +14,9 @@
 
 	&__item {
 		flex-basis: 47%;
-		width: 47%;
+		max-width: 47%;
 		padding-left: 110px;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 		background-repeat: no-repeat;
 		background-position: 0 7px;
 
@@ -57,7 +61,12 @@
 	}
 
 	@media (max-width: @screen-md) {
-		padding-bottom: 0;
+		padding-top: 60px;
+		padding-bottom: 30px;
+
+		h2 {
+			margin-bottom: auto;
+		}
 
 		&__content {
 			display: block;
@@ -65,6 +74,7 @@
 
 		&__item {
 			width: 100%;
+			max-width: none;
 		}
 
 		&__btn {

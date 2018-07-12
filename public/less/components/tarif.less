@@ -5,6 +5,39 @@
     display: none !important;
 }
 
+@media (max-width: 767px) {
+    .visible-xs {
+        display: block !important
+    }
+
+    .hidden-xs {
+        display: none !important
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm {
+        display: block !important
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .visible-md {
+        display: block !important
+    }
+}
+
+@media (min-width: 1201px) {
+    .visible-lg {
+        display: block !important
+    }
+
+    .container {
+        width: 1200px
+    }
+}
+
+
 
 .drop {
     cursor: pointer
@@ -14,9 +47,39 @@
     display: none
 }
 
+.drop__toggle {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .25s, opacity .2s
+}
+
+.drop__check:checked ~ .drop__toggle,
+.drop__check:checked ~ .drop__toggle-wrap > .drop__toggle {
+    max-height: 1000px;
+    opacity: 1
+}
+
+@media (max-width: 767px) {
+    .drop__check:checked ~ .drop__toggle,
+    .drop__check:checked ~ .drop__toggle-wrap > .drop__toggle {
+        max-height: 2000px;
+        opacity: 1
+    }
+}
+
 .tarif {
     width: 100%;
-    margin: 0 auto
+    padding-left: 50px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.tarif__heading {
+    text-align: center;
 }
 
 .tarif__special {
@@ -34,12 +97,18 @@
 }
 
 .tarif__wrap {
-    padding-top: 50px;
-    padding-bottom: 50px
+    padding-top: 100px;
+    padding-bottom: 160px;
+
+    @media (max-width: @screen-sm) {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
 }
 
 .tarif__wrap h2 {
-    margin-bottom: 90px
+    color: #fff;
+    margin-bottom: 50px;
 }
 
 .tarif__title {
@@ -60,6 +129,13 @@
 .tarif .pseudo-link {
     color: #000;
     display: inline
+}
+
+.pseudo-link {
+    color: #0078d8;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    cursor: pointer;
 }
 
 .tarif__tr {
@@ -152,7 +228,8 @@
     top: -2px;
     left: 10px;
     border-left: 2px solid #829eb2;
-    border-bottom: 2px solid #829eb2
+    border-bottom: 2px solid #829eb2;
+    opacity: 0.6;
 }
 
 .tarif__no:after,
@@ -166,8 +243,9 @@
 .tarif__no:after {
     top: 8px;
     left: 0;
-    border-right: 2px solid #829eb2;
-    border-top: 2px solid #829eb2
+    border-right: 2px solid #829282;
+    border-top: 2px solid #829eb2;
+    opacity: 0.6;
 }
 
 .tarif_hidden {
@@ -182,7 +260,26 @@
 
 .tarif .btn {
     width: 100%;
-    margin: 14px 0 0
+    margin: 14px 0 0;
+    width: auto;
+    height: 64px;
+    line-height: 64px;
+    font-family: "Segoe UI";
+    border-radius: 4px;
+    font-size: 20px;
+    transition: opacity .3s, background-color .3s;
+    padding: 0;
+
+    @media (max-width: @screen-lg) {
+        font-size: 18px;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    @media (max-width: @screen-md) {
+        font-size: 18px;
+        margin: 0 auto;
+    }
 }
 
 .tarif__footer .tarif__td:last-child {
@@ -190,7 +287,11 @@
 }
 
 .tarif__footer .tarif__td {
-    padding: 6px 20px 10px
+    padding: 6px 20px 10px;
+
+    @media (max-width: @screen-lg) {
+        padding: 6px 0px 10px;
+    }
 }
 
 .tarif_skype .tarif {
@@ -294,7 +395,7 @@
 @media (max-width: 1200px) {
     .tarif {
         width: auto;
-        margin: 0 42px
+        // margin: 0 42px;
     }
 
     .tarif__td,
@@ -361,7 +462,8 @@
     border: 1px solid #e9f1f9;
     border-radius: 4px;
     text-align: center;
-    margin-bottom: 14px
+    margin-bottom: 14px;
+    background-color: #fff;
 }
 
 .tarif-mob__price,

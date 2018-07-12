@@ -27,6 +27,10 @@
 		color: #fff;
 	}
 
+	&--bg-blue {
+		background-color: #008dd2;
+	}
+
 	&--bg-darkblue {
 		background-color: @darkblue;
 		color: #fff;
@@ -72,7 +76,7 @@
 
 	&--onecolumn {
 		padding-top: 100px;
-		padding-bottom: 130px;
+		padding-bottom: 120px;
 	}
 
 	&--twocolumn {
@@ -81,7 +85,7 @@
 	}
 
 	&--down-part {
-		padding-bottom: 130px;
+		padding-bottom: 120px;
 	}
 
 	&--down-part &__inner {
@@ -131,8 +135,14 @@
 		}
 	}
 
+	&[data-section="1"] &__inner {
+		padding-top: 85px;
+		padding-bottom: 115px;
+	}
+
 	&[data-section="6"] &__inner {
 		max-width: 43.5%;
+		padding-bottom: 70px;
 	}
 
 	@media (min-width: @screen-md) {
@@ -143,6 +153,11 @@
 	}
 
 	@media (max-width: @screen-md) {
+
+		&[data-section="1"] &__inner {
+			padding-bottom: 0;
+		}
+		
 		&__inner {
 			height: auto;
 			max-width: none;
@@ -162,8 +177,16 @@
 			left: 0;
 		}
 
+		&[data-section="6"] .section__inner {
+			max-width: none;
+		}
+
 		&--onecolumn {
 			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+
+		&--down-part {
 			padding-bottom: 30px;
 		}
 
